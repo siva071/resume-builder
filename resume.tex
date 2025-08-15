@@ -1,0 +1,140 @@
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% Page Geometry
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+% Hyperlink Setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdftitle={Resume},
+    pdfauthor={Sivasai}
+}
+
+% Custom Commands
+\newcommand{\resumeline}{\noindent\rule{\linewidth}{0.4pt}}
+
+% Section Formatting
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\resumeline\vspace{0.2cm}]
+\titlespacing*{\section}{0pt}{1.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+\pagestyle{empty} % No page numbers
+
+% Data (from resume_builder.py)
+\newcommand{\fullname}{Sivasai}
+\newcommand{\jobtitle}{Freelance Web Developer & Designer}
+\newcommand{\phone}{+1-234-567-890}
+\newcommand{\email}{sivasai@example.com}
+\newcommand{\linkedin}{linkedin.com/in/sivasai}
+\newcommand{\github}{github.com/sivasai}
+\newcommand{\website}{sivasai.dev}
+\newcommand{\address}{Bangalore, India}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge \textbf{\fullname}}
+    \vspace{0.1cm}
+    \resumeline
+    \vspace{0.1cm}
+    {\large \textit{\jobtitle}}
+    \vspace{0.1cm}
+    \href{tel:\phone}{\phone} • \href{mailto:\email}{\email} • \href{https://\linkedin}{\linkedin} • \href{https://\github}{\github} • \href{https://\website}{\website} • \address
+\end{center}
+
+% --- PROFESSIONAL SUMMARY ---
+\section*{Professional Summary}
+Highly motivated and versatile professional with experience in freelance web development, digital content creation, and project management. Skilled in developing custom WordPress sites, designing engaging marketing visuals, and executing end-to-end project delivery. Proven ability to grow online presence through SEO-friendly content and strategic social media marketing. Seeking to leverage technical and creative skills in a challenging new role.
+
+% --- SKILLS ---
+\section*{Skills}
+\begin{itemize}[leftmargin=*, label={}]
+    \item \textbf{Programming:} Python, JavaScript, HTML5, CSS3, SQL
+    \item \textbf{Frameworks & Libraries:} React, Node.js, Django, Flutter
+    \item \textbf{Databases:} MySQL, PostgreSQL, MongoDB, Firebase
+    \item \textbf{Tools / Platforms:} Git, Docker, WordPress, Adobe Creative Suite, SEO Tools
+\end{itemize}
+
+% --- EDUCATION ---
+\section*{Education}
+\textbf{Bachelor of Technology in Computer Science} \hfill 2022 -- 2026 \\
+\textit{Vellore Institute of Technology, Vellore, India} \\
+Relevant Courses: Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Web Development.
+
+% --- EXPERIENCE ---
+\section*{Experience}
+\textbf{Freelance Web Developer & Designer} \hfill 2022 -- 2026 \\
+\textit{Edutech, Bangalore}
+\begin{itemize}[leftmargin=*, topsep=0.2cm, itemsep=0pt, parsep=0pt]
+    \item Developed custom WordPress websites for businesses and individuals.
+    \item Designed engaging graphics, social media creatives, and marketing visuals.
+    \item Edited and produced YouTube & Instagram Reels for e-commerce and business promotion.
+    \item Managed end-to-end project execution including client communication, design, development, and delivery.
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Digital Content Creator} \hfill 2022 -- 2025 \\
+\textit{Tech Andhra, Andhra Pradesh}
+\begin{itemize}[leftmargin=*, topsep=0.2cm, itemsep=0pt, parsep=0pt]
+    \item Created SEO-friendly blog content and social media posts in both Telugu and English.
+    \item Grew online presence for brands through Instagram, YouTube, and Facebook marketing.
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Digital Content Creator} \hfill 2025 -- Present \\
+\textit{Tech Term, Bangalore}
+\begin{itemize}[leftmargin=*, topsep=0.2cm, itemsep=0pt, parsep=0pt]
+    \item Created SEO-friendly blog content and social media posts in both Telugu and English.
+    \item Grew online presence for brands through Instagram, YouTube, and Facebook marketing.
+\end{itemize}
+
+% --- PROJECTS ---
+\section*{Projects}
+\textbf{Telugu Career Path Job Updates Website} \hfill 2020 -- 2022\\
+\textit{Outcome: High user engagement; key resource for local job seekers.}
+\begin{itemize}[leftmargin=*, topsep=0.2cm, itemsep=0pt, parsep=0pt]
+    \item Developed a WordPress-based job portal using GeneratePress Scribe theme.
+    \item Implemented SEO and responsive UI to increase reach.
+    \item Streamlined content workflows for job alerts and resources.
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Resumate Quantum Forge AI Resume Builder} \hfill 2023 -- 2024\\
+\textit{Outcome: Demonstrated AI integration and full-stack development skills.}
+\begin{itemize}[leftmargin=*, topsep=0.2cm, itemsep=0pt, parsep=0pt]
+    \item Built an AI-powered resume generator using Streamlit and Google Gemini API.
+    \item Added ATS scoring, grammar enhancement, and guided inputs.
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Local Grocery Delivery App (Flutter + Firebase)} \hfill 2024 -- 2025\\
+\textit{Outcome: Launched a practical solution for local community needs.}
+\begin{itemize}[leftmargin=*, topsep=0.2cm, itemsep=0pt, parsep=0pt]
+    \item Created a mobile app for village-level grocery and milk delivery.
+    \item Built product listing, cart, and order tracking.
+    \item Designed simple UI for non-technical users.
+\end{itemize}
+
+% --- CERTIFICATES ---
+\section*{Certificates}
+\textbf{Google Certified Digital Marketer} - Google, 2023 \\
+\textbf{Advanced SEO Certification} - HubSpot, 2022
+
+% --- ACHIEVEMENTS ---
+\section*{Achievements}
+\textbf{Winner, National Hackathon 2024}: Developed an award-winning solution for sustainable tech. \\
+\textbf{Top Rated Freelancer}: Maintained a 5-star rating on Upwork for over 50 projects.
+
+% --- LANGUAGES ---
+\section*{Languages}
+English (Fluent), Telugu (Native)
+
+\end{document}

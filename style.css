@@ -1,0 +1,100 @@
+/* --- General Body & Font Styles --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* --- Main Container & Card Styles --- */
+.stApp > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+/* --- Typography --- */
+h1 {
+    color: #1E2A78; /* Dark Navy */
+    font-weight: 700;
+}
+
+h2 {
+    color: #1E2A78; /* Dark Navy */
+    font-size: 1.75rem;
+    border-bottom: 2px solid #00C49A; /* Accent Teal */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+h2 .icon {
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #777;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* --- Button Styles --- */
+.stButton>button {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 1.5rem !important;
+    width: 100%;
+}
+
+.stButton>button[kind="primary"] {
+    background-color: #1E2A78 !important; /* Dark Navy */
+    color: white !important;
+    border: none !important;
+}
+
+.stButton>button[kind="secondary"] {
+    background-color: #f0f2f5 !important;
+    color: #1E2A78 !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+/* --- Input & Text Area Styles --- */
+.stTextInput>div>div>input, .stTextArea>div>div>textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* --- Action Bar --- */
+.action-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    z-index: 99;
+}

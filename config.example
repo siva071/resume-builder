@@ -1,0 +1,13 @@
+# Google Gemini API Configuration
+# 
+# IMPORTANT: You no longer need to set environment variables!
+# Simply enter your API key directly in the Resume Builder app's sidebar.
+#
+# How to get your API key:
+# 1. Go to https://makersuite.google.com/app/apikey
+# 2. Sign in with your Google account
+# 3. Click "Create API Key"
+# 4. Copy and paste the key in the app's sidebar
+#
+# The API key will be stored securely in your browser session
+# and will not be saved to disk or shared with others.
