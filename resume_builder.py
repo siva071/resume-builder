@@ -16,7 +16,23 @@ from typing import List, Dict, Any
 
 import streamlit as st
 
+import streamlit as st
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.units import mm, inch
+from reportlab.lib import colors
+from reportlab.lib.enums import TA_CENTER, TA_LEFT
+
 # Optional AI (works only if installed and API key provided)
+# 🔹 Hide Streamlit top bar, menu, footer
+hide_streamlit_style = """
+    <style>
+    [data-testid="stToolbar"] {visibility: hidden !important;}
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # PDF (ReportLab)
 from reportlab.lib.pagesizes import A4
