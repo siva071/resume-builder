@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📄 ATS-Friendly Resume Builder
 
 A professional resume builder web application built with Python and Streamlit that creates ATS-optimized resumes using AI-powered content enhancement and LaTeX compilation.
@@ -193,3 +194,6 @@ If you encounter any issues:
 ---
 
 **Happy Resume Building! 🚀**
+=======
+# resume-builder
+>>>>>>> 07c192d25a61587e2527a6834e544df9b33a0dd7
