@@ -33,6 +33,17 @@ hide_streamlit_style = """
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_streamlit_style = """
+    <style>
+    [data-testid="stToolbar"] {visibility: hidden !important;}
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    [data-testid="stDecoration"] {display: none !important;}
+    </style>
+"""
+import streamlit as st
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # PDF (ReportLab)
 from reportlab.lib.pagesizes import A4
